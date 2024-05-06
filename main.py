@@ -1,8 +1,8 @@
 import telebot
 import requests
-import json
+## import json
 
-bot = telebot.TeleBot('ТОКЕН ТВОГО БОТА')
+bot = telebot.TeleBot('6518862491:AAFKq7TMkHfuOePNdPxhjNi2BNM7IGKHUmc')
 API = 'API сайта'
 
 
