@@ -1,5 +1,6 @@
 import telebot
 import requests
+
 ## import json
 
 bot = telebot.TeleBot('6518862491:AAFKq7TMkHfuOePNdPxhjNi2BNM7IGKHUmc')
@@ -10,6 +11,11 @@ API = 'API сайта'
 def start(message):
     bot.send_message(message.chat.id,
                      f'Привет, {message.from_user.first_name}. Рад тебя видеть! Напиши название города')
+
+
+@bot.message_handler()
+def get_user_text(massage):
+    bot.send_message(message.chat.id, message, parse_mode='html')
 
 
 @bot.message_handler(content_types=['text'])
